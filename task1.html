@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>nine patch_float2.0</title>
+	<title>nine patch_flexbox</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		body{
@@ -10,17 +10,21 @@
 		}
 		.container{
 			width: 100%;
+			-webkit-display:flex;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content:center;
 		}
 		.box{
 			background-color: #fea500;
-			border:1px solid gray;
+			border:1% solid gray;
 			border-radius: 0.5em;
 			text-align: center;
 			font-size: 1em;
-			padding-bottom:30%;
+			height: 30vw;
 			width: 30%;
-			margin:1%;
-			float:left;
+			margin:1vw;
 		}
 	</style>
 </head>
