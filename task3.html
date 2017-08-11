@@ -16,6 +16,7 @@
             display:-webkit-flex;
             display:flex;
             align-items: flex-start;
+            flex-wrap:wrap;
         }
         .backicon{
             margin: 10px;
@@ -32,18 +33,25 @@
             max-height:40px;
         }
         main{
+            display: flex;
+            justify-content: center;
             margin: 0 13%;
             font-size: 16px;
             color: white;
         }
-        footer{
-            margin: 100px 13% 0;
-            font-size: 10px;
-            color: #fff;
+        .content{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
         }
-        footer{
+        .article{
+            display:inline-block;
+            text-align:left;
+        }
+        .footer{
             display:flex;
             justify-content:space-between;
+            font-size:10px;
         }
         .p1{
             text-align: center;
@@ -63,19 +71,23 @@
         </div>
     </header>
     <main>
-        <p>
-            葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以线下聚会桌游道具为主。
-        </p>
+        <div class="content">
+            <div class="article">
+                <p>
+                葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以线下聚会桌游道具为主。
+                </p>
+            </div>
+            <div class="footer">
+                <div class="p1">
+                    <img src="http://119.10.57.69:880/jnshu3948/task3_03.png">
+                    <p>290560933</p>
+                </div>
+                <div class="p2">
+                    <img src="http://119.10.57.69:880/jnshu3948/task3_04.png">
+                    <p>BJPTTeng</p>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <div class="p1">
-            <img src="http://119.10.57.69:880/jnshu3948/task3_03.png">
-            <p>290560933</p>
-        </div>
-        <div class="p2">
-            <img src="http://119.10.57.69:880/jnshu3948/task3_04.png">
-            <p>BJPTTeng</p>
-        </div>
-    </footer>
 </body>
 </html>
