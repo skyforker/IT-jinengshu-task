@@ -11,6 +11,9 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            background-color: #EFF0F4;
+        }
         header{
             background-color: #5fc0cd;
             width: 100%;
@@ -19,22 +22,68 @@
             display:flex;
             justify-content: space-between;
         }
-        .close{
-            margin:0 15px;
-        }
-        .register{
+        header a{
+            text-decoration: none;
+            color: #ffffff;
             margin:0 15px;
         }
         .login{
             text-align: center;
         }
+        .inputcontainer{
+            height: 50px;
+            background-color: #ffffff;
+            margin-top: 10px;
+        }
+        .submitbox{
+            height: 50px;
+            background-color: #5fc0cd;
+            text-align: center;
+            margin-top: 10px;
+        }
+        img{
+            max-height:50px;
+            vertical-align: bottom;
+        }
+        input{
+            outline: none;
+            border: none;
+            line-height: 50px;
+            vertical-align: bottom;
+        }
+        input[type=submit]{
+            background-color: #5fc0cd;
+        }
+       a{
+          color: #5fc0cd;
+           font-size: 12px;
+           float:right;
+           margin: 5px 10px;
+       }
+
     </style>
 </head>
 <body>
     <header>
-        <a class="close">关闭</a>
+        <a href="">关闭</a>
         <div class="login"><strong>登录</strong></div>
-        <a class="register">注册</a>
+        <a href="">注册</a>
     </header>
+    <main>
+        <form action="">
+            <div class="inputcontainer">
+                <img src="images/task4_01.png">
+                <input type="text" name="cellphone number" placeholder="请输入手机号">
+            </div>
+            <div class="inputbox">
+                <img src="images/task4_02.png">
+                <input type="password" name="password" placeholder="请输入密码">
+            </div>
+            <div class="submitbox">
+                <input type="submit" value="登录">
+            </div>
+        </form>
+        <a href="">忘记密码</a>
+    </main>
 </body>
 </html>
