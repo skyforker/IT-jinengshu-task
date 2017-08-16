@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>personal homepage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+       ul{
+           font-size: 12px;
+       }
+       ul{
+           color: #000000;
+       }
+       .message-box{
+           color: #5FC0CD;
+       }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color:#5FC0CD;
+            height: 50px;
+            width: 100vw;
+            color: #ffffff;
+        }
+        header a{
+            position: absolute;
+            height: 50px;
+            margin-left: 10px;
+        }
+        header p {
+            text-align: center;
+            line-height: 50px;
+        }
+        header img{
+            height: 50px;
+        }
+        /*主体CSS*/
+        main {
+            position:fixed;
+            top: 50px;
+            bottom: 60px;
+            width: 100vw;
+            overflow-y: scroll;
+        }
+        .pic-box{
+            background-color: #cccccc;
+            background-image: url(//119.10.57.69:880/jnshu3948/task5_02.png);
+            background-size: 100vw;
+            background-position: top left;
+            background-repeat: no-repeat;
+            height: 150px;
+            color: #ffffff;
+            display: flex;
+        }
+        .photo{
+            width: 100px;
+            height: 150px;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .photo img{
+            height: 50px;
+        }
+        .brief{
+            height: 150px;
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+        #address{
+            font-size: 12px;
+            height: 16px;
+        }
+        .brief img{
+            height: 16px;
+            float: left;
+            vertical-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            height: 50px;
+            border-bottom: 1.5px solid #D0D0D0;
+            display:flex;
+            align-items:center;
+        }
+        li>img{
+            height: 16px;
+            margin:12px 5px 12px 5px;
+        }
+        .choice {
+            display: inline-block;
+            margin-right: 5px;
+            height: 16px;
+        }
+        .choice1{
+            margin-left: 12px;
+        }
+        .choice img{
+            height: 16px;
+            vertical-align: bottom;
+        }
+        .items{
+            margin-left: 12px;
+            align-items:center;
+            padding-right: 7px;
+            border-right:1px solid #D0D0D0;
+            flex:0 0 57px;
+        }
+        .content{
+            margin-left: 16px;
+            line-height:16px;
+        }
+        .salary{
+            color: #ff0000;
+        }
+        #resume{
+            height:auto;
+            min-height: 50px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 60px;
+            width: 100vw;
+        }
+        button{
+            border:none;
+            outline:none;
+        }
+        .message-box{
+            color: #5FC0CD;
+            text-align: center;
+            border: 1px solid #5FC0CD;
+            border-radius: 5px;
+            margin: 5px;
+            flex: 1 1 10px;
+            line-height: 50px;
+            background-color: #ffffff;;
+        }
+        .call-box {
+            color: #ffffff;
+            text-align: center;
+            background-color: #5FC0CD;
+            border-radius: 5px;
+            margin: 5px;
+            flex:1 1 10px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <a><img src="http://119.10.57.69:880/jnshu3948/task5_01.png"></a>
+            <p>个人主页</p>
+    </header>
+    <main>
+        <div class="pic-box">
+            <div class="photo">
+                <img src="http://119.10.57.69:880/jnshu3948/task5_03.png">
+            </div>
+            <div class="brief">
+                <p>徐士林&nbsp55岁</p>
+                <p id="address"><img src="http://119.10.57.69:880/jnshu3948/task5_04.png">京城·四方·报纸林 </p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <img src="http://119.10.57.69:880/jnshu3948/task5_05.png">
+                <p>专业技能</p>
+            </li>
+            <li>
+                <div class="choice1 choice"><img src="http://119.10.57.69:880/jnshu3948/task5_06.png">住家</div>
+                <div class="choice"><img src="http://119.10.57.69:880/jnshu3948/task5_06.png">不含餐</div>
+            </li>
+            <li>
+                <div class="items"> 从业年限 </div>
+                <div class="content">0-3年</div>
+            </li>
+            <li>
+                <div class="items"> 工作时间 </div>
+                <div class="content">全天</div>
+            </li>
+            <li>
+                <div class="items">服务价格 </div>
+                <div class="content salary">25元/小时</div>
+
+            </li>
+            <li id="resume">
+                <div class="items"> 自我介绍 </div>
+                <div class="content">可以洗衣、做饭、照顾老人、在护工方面有5年的经验，经验丰富。可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人</div>
+            </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <button type="button" class="message-box">
+            留言
+        </button>
+        <button class="call-box">
+            电话联系
+        </button>
+    </footer>
+</body>
+</html>
